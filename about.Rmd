@@ -2,4 +2,12 @@
 title: "About Me"
 ---
 
-Why I am awesome. 
+### Academic Background
+
+- **Master's Degree**: Columbia University, Master of Public Health in Epidemiology
+
+- **Undergraduate Degree**: Capital Medical University, Public Health Management
+
+### Professional Experience
+
+- **Summer Internship**: Peking Union Medical College Hospital – Participated in the "Rare Disease Special Project - Hierarchical Diagnosis and Treatment Subproject"

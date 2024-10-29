@@ -2,4 +2,4 @@
 title: "Yizhen's Website"
 ---
 
-Hello, World!
+This is a personal website of Yizhen Jia (yj2802), including academic and professional experience.
