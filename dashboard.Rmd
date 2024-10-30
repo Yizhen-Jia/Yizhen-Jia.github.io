@@ -1,19 +1,19 @@
 ---
-title: "Plotly"
+title: "Dashboard"
 output: 
-    html_document:
-      toc: true
-      toc_float: true
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
-# Brief Introduction
 
-“The Instacart Online Grocery Shopping Dataset 2017” is an anonymized dataset with over 3 million online grocery orders from more than 200,000 Instacart users.
-
-```{r}
+```{r setup, include=FALSE}
 library(tidyverse)
 library(plotly)
 library(p8105.datasets)
+
+library(flexdashboard)
 ```
+
 
 ```{r import data}
 data("instacart")
@@ -35,11 +35,12 @@ instacart =
   sample_n(5000)
 ```
 
-# Plotly of Instacart dataset
+Column {data-width=650}
+-----------------------------------------------------------------------
 
-## Plotly Scatterplot
+### Chart A
 
-```{r Scatterplot}
+```{r}
 instacart |> mutate(
     text_label = str_c("Product: ", product_name, 
                        "\nDepartment: ", department, 
@@ -60,7 +61,10 @@ instacart |> mutate(
   )
 ```
 
-## Plotly Pie
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
 
 ```{r}
 instacart |> 
@@ -79,10 +83,9 @@ instacart |>
   )
 ```
 
+### Chart C
 
-## Plotly bar plot
-
-```{r bar plot}
+```{r}
 instacart |> 
   group_by(department, time_of_day) |> 
   summarise(reorder_rate = mean(reordered), .groups = "drop") |> 
@@ -91,7 +94,7 @@ instacart |>
     y = ~reorder_rate, 
     color = ~department,
     type = "bar", 
-    colors = "Paired"
+    colors = "Pastel1"
   ) |> 
   layout(
     title = "Reorder Rate by Department and Time of Day",
@@ -101,3 +104,4 @@ instacart |>
     margin = list(t = 80) 
   )
 ```
+
