@@ -1,5 +1,11 @@
 ---
 title: "Yizhen's Website"
+output: 
+    html_document:
+      toc: true
+      toc_float: true
 ---
 
-This is a personal website of Yizhen Jia (yj2802), including academic and professional experience.
+This is a personal website of Yizhen Jia, including academic and professional experience.
+
+![](images/home.jpg)
