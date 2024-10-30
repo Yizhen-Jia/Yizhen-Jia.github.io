@@ -7,3 +7,13 @@ navbar:
       href: index.html
     - text: "About Me"
       href: about.html
+  right:
+    - text: "GitHub"
+      href: https://github.com/Yizhen-Jia
+    - icon: fa-envelope
+      href: "mailto:yj2802@cumc.columbia.edu"
+
+output:
+  html_document:
+    theme: flatly
+    css: style.css
