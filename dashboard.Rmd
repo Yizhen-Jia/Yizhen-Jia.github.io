@@ -78,8 +78,7 @@ instacart |>
     marker = list(colors = RColorBrewer::brewer.pal(n = 8, name = "Paired"))
   ) |> 
   layout(
-    title = "Order Proportion by Department",
-    margin = list(t = 80)
+    title = "Order Proportion by Department"
   )
 ```
 
@@ -94,7 +93,7 @@ instacart |>
     y = ~reorder_rate, 
     color = ~department,
     type = "bar", 
-    colors = "Pastel1"
+    colors = "Paired"
   ) |> 
   layout(
     title = "Reorder Rate by Department and Time of Day",
