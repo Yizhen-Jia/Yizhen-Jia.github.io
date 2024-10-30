@@ -6,12 +6,18 @@ output:
       toc_float: true
 ---
 
+### Personal Information
+
 - __Name:__ Yizhen Jia
+
 - __UNI:__ yj2802
+
 - __Ocupation:__ Student
+
 - __School:__ Columbia university
+
 - __Department:__ Epidemiology
-- __Hobbies:__ Everything except studying.
+
 
 ![](images/about_me.jpg)
 
