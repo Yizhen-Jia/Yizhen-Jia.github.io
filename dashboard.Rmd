@@ -38,7 +38,7 @@ instacart =
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Plotly Scatterplot
 
 ```{r}
 instacart |> mutate(
@@ -64,7 +64,7 @@ instacart |> mutate(
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Plotly Pie
 
 ```{r}
 instacart |> 
@@ -74,15 +74,16 @@ instacart |>
     values = ~n, 
     type = "pie", 
     textinfo = "label+percent", 
-    insidetextorientation = "radial",
+    textposition = "outside",
     marker = list(colors = RColorBrewer::brewer.pal(n = 8, name = "Paired"))
   ) |> 
   layout(
-    title = "Order Proportion by Department"
+    title = "Order Proportion by Department",
+    margin = list(t = 50, b = 50, l = 50, r = 50)
   )
 ```
 
-### Chart C
+### Plotly bar plot
 
 ```{r}
 instacart |> 
